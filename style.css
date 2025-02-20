@@ -210,7 +210,7 @@ h2{
 .tags{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaciado entre etiquetas */
+    gap: 5px; /* Espaciado entre etiquetas */
     padding: 20px;
     background-color: #CCA43B;
 }
