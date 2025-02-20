@@ -11,7 +11,7 @@
 body{
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, Main (flexible), Footer */
-            min-height: 100vh; /* Garantiza que el footer quede abajo */
+    min-height: 100vh; /* Garantiza que el footer quede abajo */
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 50px;
@@ -208,6 +208,7 @@ h2{
 }
 
 .tags{
+    max-height: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px; /* Espaciado entre etiquetas */
@@ -321,6 +322,11 @@ h2{
 
 /* Responsividad */
 @media (max-width: 768px) {
+
+    .header_marca{
+        margin: 20px;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
