@@ -340,3 +340,69 @@ h2{
         margin-right: 10px;
     }
 }
+
+.download button{
+    background-color: #ff5277;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin:10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.download i{
+    font-size: 25px;
+    color: black;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.en {
+    color: #ff5277;
+}
+.es {
+    color: #CCA43B;
+}
+.check {
+    appearance: none; /* Oculta el checkbox predeterminado */
+    position: relative;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #CCA43B;
+    border-radius: 25px;
+    transition: background 0.25s ease-in-out;
+}
+.check:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    transition: left 0.25s ease-in-out, border 0.25s ease-in-out;
+    border: 2px solid #ff5277;
+    box-sizing: border-box;
+    
+}
+.check:checked:after {
+    left: 25px;
+    border: 2px solid #CCA43B;
+}
+.check:checked:before {
+    background: #ff5277;
+    
+}
